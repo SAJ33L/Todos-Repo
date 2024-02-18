@@ -7,8 +7,8 @@ function App() {
       <h3>
         My App Works fine just get it done with!!!!!!!
       </h3>
-      <ButtonIcon/>
-      <ButtonIconTwo/>
+      <ButtonIcon />
+ 
     </div>
   );
 }
@@ -19,19 +19,45 @@ export default App;
 function ButtonIcon(){
   return (
     <>
-    <button onClick={alert("Sajeel bhai rocks!!!!!")}>
+    <button className='btn btn-primary'>
       click me bhai
+    </button>
+    <button className='btn btn-success'>
+      click me bhai 2
+    </button>
+    <button className='btn btn-danger col-sm-4'>
+      click me bhai 3
     </button>
     </>
   );
 }
 
-function ButtonIconTwo(){
+function NavComponent(){
+
   return (
-    <>
-    <button onClick={alert("Sajeel bhai rocks!!!!!")}>
-      click me bhai
-    </button>
-    </>
-  );
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled">Disabled</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+    </div>
+  )
 }
